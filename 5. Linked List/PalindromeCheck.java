@@ -21,7 +21,7 @@ static boolean palindromecheck(Node head){
 static Node reverse(Node head){
     Node temp = head;
     Node prev = null;
-    while (temp != null){
+    while (temp != null){4
         Node front = temp.next;
         temp.next = prev;
         prev = temp;
