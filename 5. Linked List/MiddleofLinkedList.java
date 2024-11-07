@@ -3,14 +3,14 @@ public class MiddleofLinkedList {
 
     }
 }
-/*
-* static Node middle(Node head){
-*   Node slow = head;
-*   Node speed = head;
-*   while(speed != null && speed.next != null){
-*      slow = slow.next;
-*      speed = speed.next.next;
-*   }
-*   return slow;
-* }
-* */
+
+ static Node middle(Node head){
+   Node slow = head;
+   Node speed = head;
+   while(speed != null && speed.next != null){
+      slow = slow.next;
+      speed = speed.next.next;
+   }
+   return slow;
+ }
+
