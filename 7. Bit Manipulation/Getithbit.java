@@ -1,6 +1,6 @@
 public class Getithbit {
     public static void main(String[] args) {
-        int n = 4;
-        System.out.println((n >> 0) & 1);
+        int n = 4, i = 2;
+        System.out.println((n >> i) & 1);
     }
 }

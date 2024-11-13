@@ -1,9 +1,8 @@
 public class DecimaltoBinary {
     public static void main(String[] args) {
-        int n = -6;
+        int n = 12;
         System.out.println(Integer.toBinaryString(n));
         System.out.println(toBinary(n));
-        System.out.println(~99);
     }
     static String toBinary(int n){
         String ans = "";
