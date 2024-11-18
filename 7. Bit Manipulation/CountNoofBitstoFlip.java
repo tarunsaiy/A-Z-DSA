@@ -3,10 +3,12 @@ public class CountNoofBitstoFlip {
         int num = 8;
         int target = 2;
         int ans = num ^ target;
-        int len = (int) (Math.log(ans) / Math.log(2)) + 1;
         int cnt = 0;
-        for(int i = 0; i < len; i++){
+        int size = (int)(Math.log(num) / Math.log(2)) + 1;
+        int i = 0;
+        while (i < size){
             if((ans & (1 << i)) != 0) cnt += 1;
+            i += 1;
         }
         System.out.println(cnt);
     }
