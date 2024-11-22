@@ -3,7 +3,7 @@ import java.util.List;
 
 public class PowerSet {
     public static void main(String[] args) {
-        int nums[] = {1,2,3};
+        int nums[] = {4,5,6};
         System.out.println(powerSet(nums));
     }
     static List<List<Integer>> powerSet(int[] nums){
