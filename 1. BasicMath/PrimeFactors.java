@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class PrimeFactors {
     public static void main(String[] args) {
-        System.out.println(primeFactors(12246));
+        System.out.println(primeFactors(8));
     }
     static ArrayList<Integer> primeFactors(int n){
         ArrayList<Integer> arr = new ArrayList<>();
