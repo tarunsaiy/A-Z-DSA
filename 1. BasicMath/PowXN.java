@@ -1,6 +1,6 @@
 public class PowXN {
     public static void main(String[] args) {
-        System.out.println(pow(1, Integer.MIN_VALUE));
+        System.out.println(pow(2, -1));
     }
     static double pow(double x, int n){
         double ans = 1;
@@ -8,9 +8,8 @@ public class PowXN {
             ans *= x;
             n += 1;
         }
-        boolean negative = false;
+        int neg = n;
         n = Math.abs(n);
-        if(n < 0) negative = true;
         while (n > 0){
             if((n & 1) == 1){
                 ans = ans * x;
@@ -21,7 +20,7 @@ public class PowXN {
                 x *= x;
             }
         }
-        if(negative) return (1 / ans);
+        if(neg < 0) return (1 / ans);
         return ans;
     }
 }
