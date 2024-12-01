@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class samp {
     public static void main(String[] args) {
-        System.out.println(countPrimes(2));
+        System.out.println(countPrimes(10));
     }
     static int countPrimes(int n) {
         if (n == 0 || n == 1) return 0;

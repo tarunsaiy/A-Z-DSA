@@ -4,11 +4,12 @@ import java.util.Arrays;
 public class MergeSort {
     public static void main(String[] args) {
         int[] arr = {5,4,3,2,1};
-        mergeSort(arr,0,arr.length- 1);
+        mergeSort(arr,0,arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
     static void mergeSort(int[] arr, int low, int high){
         if(low >= high) return;
+
         int mid = (low + high) / 2;
         mergeSort(arr, low, mid);
         mergeSort(arr, mid + 1, high);
