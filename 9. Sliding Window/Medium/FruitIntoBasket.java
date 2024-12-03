@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class FruitIntoBasket {
     public static void main(String[] args) {
-        int[] arr = {2 ,1 ,2};
+        int[] arr = {5,5,2 ,1 ,2,2,2};
         System.out.println(fruitIntoBasket(arr,2));
     }
     static int fruitIntoBasket(int[] arr, int k){

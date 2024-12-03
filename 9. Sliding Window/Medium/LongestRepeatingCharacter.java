@@ -1,6 +1,6 @@
 public class LongestRepeatingCharacter {
     public static void main(String[] args) {
-        System.out.println(longestRepeatingCHaracter("BAAA", 0));
+        System.out.println(longestRepeatingCHaracter("BAAAXCCCC", 0));
     }
     static int longestRepeatingCHaracter(String str, int k){
         int l = 0, r = 0, max = 0, maxfreq = 0, n = str.length();
