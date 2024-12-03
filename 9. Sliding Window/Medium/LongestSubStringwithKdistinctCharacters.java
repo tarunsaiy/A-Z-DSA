@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class LongestSubStringwithKdistinctCharacters {
     public static void main(String[] args) {
-        System.out.println(longest("aaabbccd", 1));
+        System.out.println(longest("aaab", 2));
     }
     static int longest(String str, int k){
         int r = 0, l = 0, max = 0, n = str.length();

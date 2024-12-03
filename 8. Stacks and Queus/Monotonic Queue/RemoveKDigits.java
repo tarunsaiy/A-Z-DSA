@@ -2,7 +2,7 @@ import java.util.Stack;
 
 public class RemoveKDigits {
     public static void main(String[] args) {
-        System.out.println(removeKDigits("92916",2));
+        System.out.println(removeKDigits("9269",2));
     }
     static String removeKDigits(String str, int k){
         Stack<Character> s = new Stack<>();
