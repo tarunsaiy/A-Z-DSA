@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-//given a b c d -> a/b + c/d in simplest form
+//given a b c d -> Give te value of a/b + c/d in simplest form
 public class SimpleNumeratorByDenominator {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(addFraction(5,7,4,9)));

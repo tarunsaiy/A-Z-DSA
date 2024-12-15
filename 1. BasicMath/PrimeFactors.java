@@ -1,3 +1,13 @@
+/*
+* Given a number N. Find its unique prime factors in increasing order.
+
+
+Example 1:
+
+Input: N = 100
+Output: 2 5
+*
+* GFG: https://www.geeksforgeeks.org/problems/prime-factors5052/1*/
 import java.util.ArrayList;
 
 public class PrimeFactors {

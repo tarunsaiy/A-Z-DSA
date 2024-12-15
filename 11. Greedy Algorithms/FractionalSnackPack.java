@@ -1,3 +1,9 @@
+/*Given two arrays, val[] and wt[], representing the values and weights of items,
+ and an integer capacity representing the maximum weight a knapsack can hold,
+ determine the maximum total value that can be achieved by putting items in the knapsack.
+  You are allowed to break items into fractions if necessary.
+Return the maximum value as a double, rounded to 6 decimal places.*/
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

@@ -22,7 +22,7 @@
 
 public class ValidParanthasesString {
     public static void main(String[] args) {
-        System.out.println(validParanthasesString("(*))"));
+        System.out.println(validParanthasesString("(()))()()*"));
     }
     static boolean validParanthasesString(String str){
         int min = 0, max = 0;
