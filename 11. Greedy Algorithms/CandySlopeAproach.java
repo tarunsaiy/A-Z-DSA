@@ -1,6 +1,6 @@
 public class CandySlopeAproach {
     public static void main(String[] args) {
-        int[] arr= {1,3};
+        int[] arr= {1,5,4,2,1};
         System.out.println(minimumCandies(arr));
     }
     static int minimumCandies(int[] arr){
