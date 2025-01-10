@@ -1,10 +1,9 @@
 import java.util.Arrays;
-import java.util.HashMap;
 
-public class debugger {
+public class CountVowelStringInRanges {
     static int[] vowelStrings(String[] words, int[][] queries) {
         int n = words.length;
-        boolean hash[] = new boolean[n]
+        boolean hash[] = new boolean[n];
         int index = 0;
         for (int i = 0; i < words.length; i++){
             char start = words[i].charAt(0);
