@@ -1,15 +1,16 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 public class SubsequenceOfString {
-    static List<String> subSequence(String S){
-        List<String> list = new ArrayList<>();
+    static HashSet<String> subSequence(String S){
+        HashSet<String> list = new HashSet<>();
         helper(0, S, new String(""), list);
-        Collections.sort(list);
+//        Collections.sort(list);
         return list;
     }
-    static void helper(int index, String S, String ans, List<String> list){
+    static void helper(int index, String S, String ans, HashSet<String> list){
         if (index == S.length()){
             list.add(ans);
             return;
@@ -20,7 +21,8 @@ public class SubsequenceOfString {
     }
 
     public static void main(String[] args) {
-        String S = "abc";
-        System.out.println(subSequence(S));
+        String s = "AABAAB";
+//        String s = "AB";
+        System.out.println(subSequence(s));
     }
 }
