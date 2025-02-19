@@ -20,6 +20,6 @@ public class DistinctPermutations {
         }
     }
     public static void main(String[] args) {
-        System.out.println(numTilePossibilities("AAB"));
+
     }
 }
