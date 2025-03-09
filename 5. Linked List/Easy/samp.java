@@ -1,2 +1,1 @@
-package Easy;public class samp {
-}
+c

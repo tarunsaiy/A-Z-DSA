@@ -14,8 +14,12 @@ public class LexographicalStringOfLengthN {
     }
 
     public static void main(String[] args) {
-        List<String> L = new ArrayList<>();
-        f("", L, 3);
-        System.out.println(L);
+        StringBuilder sb = new StringBuilder("39");
+        sb.append(2);
+        sb.append("a");
+        System.out.println(sb);
+        String ans = "dd";
+        ans.endsWith()
+
     }
 }

@@ -1,18 +1,62 @@
 import java.util.*;
-public class samp {
+
+public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-        while (t-- > 0){
-            int n = sc.nextInt();
-            ArrayList<Integer> A = new ArrayList<>();
-            int cnt = 1;
-            while(A.size() != 1) {
-                A.remove(0);
-                if(A.size() > 2) A.remove(2);
-                cnt += 1;
+        Scanner scanner = new Scanner(System.in);
+        String[] inputData = scanner.nextLine().split(" ");
+        int t = Integer.parseInt(inputData[0]);
+        int index = 1;
+        List<String> resLines = new ArrayList<>();
+
+        for (int _ = 0; _ < t; _++) {
+            int n = Integer.parseInt(inputData[index++]);
+            int x = Integer.parseInt(inputData[index++]);
+            int k = Integer.parseInt(inputData[index++]);
+            String s = inputData[index++];
+
+            int[] prefix = new int[n + 1];
+            for (int i = 1; i <= n; i++) {
+                if (s.charAt(i - 1) == 'L') {
+                    prefix[i] = prefix[i - 1] - 1;
+                } else {
+                    prefix[i] = prefix[i - 1] + 1;
+                }
             }
-            System.out.println(cnt);
+
+            int firstReset = -1;
+            for (int i = 1; i <= n; i++) {
+                if (x + prefix[i] == 0) {
+                    firstReset = i;
+                    break;
+                }
+            }
+
+            if (firstReset == -1 || firstReset > k) {
+                resLines.add("0");
+                continue;
+            }
+
+            int resets = 1;
+            int timeUsed = firstReset;
+
+            int t0 = -1;
+            for (int j = 1; j <= n; j++) {
+                if (prefix[j] == 0) {
+                    t0 = j;
+                    break;
+                }
+            }
+
+            if (t0 == -1) {
+                resLines.add(String.valueOf(resets));
+                continue;
+            }
+
+            int additionalCycles = (k - timeUsed) / t0;
+            resets += additionalCycles;
+            resLines.add(String.valueOf(resets));
         }
+
+        System.out.println(String.join("\n", resLines));
     }
 }
