@@ -27,6 +27,6 @@ public class SingleSubSequenceEqualToSum {
 
     public static void main(String[] args) {
         int[] A = {1,2,1};
-        System.out.println(subsequence(A, 2));
+        System.out.println(subsequence(A, 4));
     }
 }

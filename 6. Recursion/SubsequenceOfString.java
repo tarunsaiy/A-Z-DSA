@@ -21,8 +21,8 @@ public class SubsequenceOfString {
     }
 
     public static void main(String[] args) {
-        String s = "AABAAB";
-//        String s = "AB";
+//        String s = "AABAAB";
+        String s = "AB";
         System.out.println(subSequence(s));
     }
 }
